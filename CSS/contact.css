@@ -1,0 +1,172 @@
+:root{
+    --oscuro :#131919;
+    --primario:#2d474a;
+    --secundario: #cf8055;
+    --semiclaro: #bdbbbc;
+    --blanco: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,h2,h3{
+    text-align: center;
+    color: var(--blanco);
+}
+
+body {
+    font-size:16px; /* 1rem=10px */
+    font-family: 'Dosis', sans-serif;
+    background-color: var(--oscuro);
+}
+
+.boton{
+    color: var(--blanco);    
+    background-color: var(--secundario);
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+    width: 80%;
+    text-align: center;
+
+}
+.boton:hover{
+    color: var(--blanco);    
+    background-color: var(--oscuro);
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+    width: 80%;
+    text-align: center;
+}
+@media (min-width: 780px) {
+    .boton{
+        color: var(--blanco);    
+        background-color: var(--secundario);
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        border: none;
+        width: 120px;
+        text-align: center;
+    }
+    .boton:hover{
+        color: var(--blanco);    
+        background-color: var(--oscuro);
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        border: none;
+        width: 120px;
+        text-align: center;
+    }
+}
+
+body {
+    font-size:16px; /* 1rem=10px */
+    font-family: 'Krub', sans-serif;
+}
+
+.titulo {
+    font-size: 2.8rem;
+}
+
+.contacto{
+    width: 0 auto;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacto p{
+    font-size: 2rem;
+    color: var(--primario);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    .contacto2{
+        margin: 0 auto;
+        width: 40rem;
+        padding: 10rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    form{
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label{
+        display:flex;
+        text-align: center;
+
+    }
+    input [type=text]{
+        width: 40rem;
+    }
+    input[type=submit]{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color:var(--secundario);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:var(--primario);
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+footer{
+    color: var(--blanco);
+}
