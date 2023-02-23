@@ -1,6 +1,6 @@
 :root{
     --blanco :#ffffff;
-    --primario:#578f96;
+    --primario:#6cdfee;
     --secundario: #cf8055;
     --semiclaro: rgba(235, 196, 215, 0.788);
 }
@@ -81,12 +81,9 @@ body {
         width: 120px;
     }
     .boton:hover{   
-        background-color: var(--primario);
-        border: none;
         width: 120px;
         padding: .5rem 2.5rem;
         text-align: center;
-        border: .5rem solid var(--secundario);
     }
     .contacto2{
         margin: 0 auto;

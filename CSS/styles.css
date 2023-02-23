@@ -1,11 +1,11 @@
 :root{
     --blanco :#ffffff;
-    --primario:#73b9c2;
+    --primario:#6cdfee;
     --secundario: #cf8055;
     --semiclaro: rgba(235, 196, 215, 0.788);
-    --green_border: rgb(78, 255, 172);
+    --green_border: rgb(0, 0, 0);
     --red_border:rgb(255, 115, 138);
-    --cyan_border:rgb(104, 255, 242);
+    --cyan_border:rgb(195, 244, 72);
 }
 
 html {
