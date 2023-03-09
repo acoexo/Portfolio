@@ -8,5 +8,6 @@ Cambios notorios:
     -->Se han borrado opciones inútiles para la optimización de la página web.
 
 
-
+Leak:
+Se está generando una función con JSON
 \\
