@@ -82,8 +82,6 @@ body {
     }
     .boton:hover{   
         width: 120px;
-        padding: .5rem 2.5rem;
-        text-align: center;
     }
     .contacto2{
         margin: 0 auto;

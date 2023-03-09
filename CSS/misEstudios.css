@@ -33,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.boton2,
 .boton{
     color: var(--blanco);    
     background-color: var(--secundario);
@@ -49,6 +49,13 @@ body {
     text-align: center;
 
 }
+.boton2:hover{
+    background-color: var(--blanco);
+    border: .5rem solid var(--secundario);
+    padding: .5rem 2.5rem;
+    background-color: var(--blanco);
+    color: #000;
+}
 .boton:hover{
     color: var(--blanco);    
     background-color: var(--primario);
@@ -62,12 +69,6 @@ body {
     border: none;
     width: 80%;
     text-align: center;
-}
-
-
-body {
-    font-size:16px; /* 1rem=10px */
-    font-family: 'Krub', sans-serif;
 }
 
 .titulo {
@@ -112,9 +113,8 @@ body {
     font-weight: 700;
     padding: 10px;   
     text-decoration: none;   
-    color: var(--blanco);
-    background-color: var(--primario);
-    border-radius: 0.5rem;
+    color: #000;
+    background-image: linear-gradient(to top, var(--semiclaro) 0%, var(--blanco) 100% );;
     border: none;
 }
 .frontintro{

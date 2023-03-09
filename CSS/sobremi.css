@@ -34,6 +34,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+.boton2:hover{
+    background-color: var(--blanco);
+    border: .5rem solid var(--secundario);
+    padding: .5rem 2.5rem;
+    background-color: var(--blanco);
+    color: #000;
+}
+.boton2,
 .boton{
     color: var(--blanco);    
     background-color: var(--secundario);
@@ -106,9 +114,8 @@ body {
     font-weight: 700;
     padding: 10px;   
     text-decoration: none;   
-    color: var(--blanco);
-    background-color: var(--primario);
-    border-radius: 0.5rem;
+    color: #000;
+    background-image: linear-gradient(to top, var(--semiclaro) 0%, var(--blanco) 100% );;
     border: none;
 }
 .frontintro{

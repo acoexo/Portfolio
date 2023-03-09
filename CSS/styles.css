@@ -42,6 +42,7 @@ p{
     width: auto;
     background-image: linear-gradient(to top, var(--semiclaro) 0%, var(--blanco) 50% );
 }
+.boton2,
 .boton1,
 .boton1:hover,
 .boton:hover,
@@ -62,6 +63,13 @@ p{
     width: 100%;
     max-width: 20rem;
 
+}
+.boton2:hover{
+    background-color: var(--blanco);
+    border: .5rem solid var(--secundario);
+    padding: .5rem 2.5rem;
+    background-color: var(--blanco);
+    color: #000;
 }
 .boton1:hover,
 .boton:hover{   
