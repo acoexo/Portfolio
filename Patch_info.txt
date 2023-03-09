@@ -6,8 +6,7 @@ Se han actualizado los colores y el orden de las imágenes en el menú principal
 Cambios notorios:
     -->Se han arreglado problemas visuales con respecto a las imagenes.
     -->Se han borrado opciones inútiles para la optimización de la página web.
+    --> Se han mejorado los colores de la barra de navegación y de los botones
 
 
-Leak:
-Se está generando una función con JSON
 \\
