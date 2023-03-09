@@ -233,3 +233,9 @@ input[type=submit]:hover {
 footer{
     color: var(--blanco);
 }
+.ejemplo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

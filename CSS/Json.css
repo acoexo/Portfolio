@@ -1,0 +1,92 @@
+/* || general styles */
+:root{
+    --background: rgb(255, 255, 255);
+  }
+  html {
+      box-sizing: border-box;
+      font-size: 62.5%; 
+      font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+
+  
+  body {
+    font-size: 15px;
+    max-width: 1000px;
+    margin: 1rem auto;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1, h2 {
+    font-family: 'Dosis', cursive;
+    background-image:linear-gradient(to right, var(--background), rgba(255,0,0,1));
+    text-align: center;
+  }
+  
+  /* header styles */
+  
+  h1 {
+    font-size: 4rem;
+  }
+    
+  header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  img{
+    width: 100%;
+  }
+  /* section styles */
+  .button{
+    color:#000;
+    background-color: rgb(228, 36, 36);
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 4rem;
+    padding: 1rem 5rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .button:hover{
+    background-color: rgb(180, 116, 116);
+
+  }
+  section article {
+    padding: 1rem;
+    background-color: var(--background);
+  }
+  section{
+    margin: 7%;
+    border: 3px solid #000;
+    border-radius: .5rem;
+    display:flex;
+    flex-direction: column;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  section p {
+    margin: .5rem 0;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  /* Responsive */
+  @media (min-width:650px) {
+    section{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .2rem;
+      
+    }
+    h2{
+      text-align: left;
+    }
+  }

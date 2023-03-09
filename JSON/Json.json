@@ -1,0 +1,72 @@
+{
+  "title" : "Honorary Members",
+  "company" : "ALIDAN S.L.U.",
+  "members" : [
+    {
+      "name" : "Paco",
+      "surname" : "Alferez Castellano",
+      "dni" : "11223344B",
+      "direction":"Av. Castillo nº 12",
+      "birthDate":"12-02-1995",
+      "banStrikes":"0",
+      "registerDate":"05-02-2019",
+      "registerCode":"2019feb5-0010",
+      "img":"./img/Paco.jpg"  
+    },
+    {
+      "name" : "Joe",
+      "surname" : "Mamma Akhjou",
+      "dni" : "NONE",
+      "direction":"c/ Pedro Hidalgo nº4",
+      "birthDate":"09-06-2004",
+      "banStrikes":"1",
+      "registerDate":"12-05-2018",
+      "registerCode":"2018may5-5847",
+      "img":"./img/Joe.jpg"
+    },
+    {
+      "name" : "Allan",
+      "surname" : "Smith",
+      "dni" : "857412336L",
+      "direction":"Rhode Island Street nº605",
+      "birthDate":"09-12-2000",
+      "banStrikes":"1",
+      "registerDate":"17-09-2022",
+      "registerCode":"2022sep17-9647",
+      "img":"/img/Allan.jpg"
+    },
+    {
+      "name" : "Will",
+      "surname" : "Sánchez",
+      "dni" : "45455472T",
+      "direction":"Santa Fé Street nº9",
+      "birthDate":"14-08-1985",
+      "banStrikes":"1",
+      "registerDate":"02-04-2021",
+      "registerCode":"2021apr02-2468",
+      "img":"/img/Will.jpg"
+    },
+    {
+      "name" : "Laura",
+      "surname" : "Santana Cabrera",
+      "dni" : "20041810H",
+      "direction":"c/Agente Luis nº8",
+      "birthDate":"05-07-1996",
+      "banStrikes":"0",
+      "registerDate":"08-06-2018",
+      "registerCode":"2018jun08-6453",
+      "img":"/img/Laura.jpg"
+    },
+    {
+      "name" : "Sara",
+      "surname" : "Sarmiento Sánchez",
+      "dni" : "54182495D",
+      "direction":"c/Cuatro de Marzo nº69",
+      "birthDate":"07-03-1985",
+      "banStrikes":"1",
+      "registerDate":"05-01-2022",
+      "registerCode":"2022jan05-3702",
+      "img":"/img/Sara.jpg"
+    }
+  ]
+}
