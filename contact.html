@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <script src="./js/js.js"></script>
 <!--Comentario-->
 </head>
 <body>
@@ -20,13 +21,35 @@
                 <form>
                     <a class="boton" href="index.html">Inicio</a>
                     <p>CONTÁCTAME RELLENANDO TODOS LOS CAMPOS</p>
-                    <label for="fname">Nombre:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Nombre">
-                    <label for="lname">Apellidos:</label>
-                    <input type="text" id="lname" name="lname" placeholder="Apellidos">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="text" id="email" name="email" placeholder="Email"><br>
-                    <input type="submit" name="submit">
+                    <form class="form">
+                        <div class="campo">
+                            <label class="campo__label" for="nombre">Nombre</label>
+                            <input 
+                                class="campo__field"
+                                type="text" 
+                                placeholder="Tu Nombre" 
+                                id="nombre"
+                            >
+                        </div>
+                        <div class="campo">
+                            <label class="campo__label" for="email">E-mail</label>
+                            <input 
+                                class="campo__field"
+                                type="email" 
+                                placeholder="Tu E-mail" 
+                                id="email"
+                            >
+                        </div>
+                        <div class="campo">
+                            <label class="campo__label" for="mensaje">Mensaje</label>
+                            <textarea 
+                                class="campo__field campo__field--textarea"
+                                id="mensaje"
+                            ></textarea>
+                        </div>
+                        <div class="campo">
+                            <input type="submit" value="Enviar" class="boton boton--primario">
+                        </div>
                   </form>
             </div>
         </section>
