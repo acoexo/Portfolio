@@ -33,7 +33,6 @@ formulario.addEventListener('click', function(e){
 function mostrarError(mensaje){
     const alerta=document.createElement("p");
     alerta.textContent=mensaje;
-    alerta.classList.add("red");
     formulario.appendChild(alerta);
     setTimeout(()=>{alerta.remove()}, 1000);
 
@@ -41,7 +40,6 @@ function mostrarError(mensaje){
 function mostrarMensaje(mensaje){
     const correct=document.createElement("p");
     correct.textContent=mensaje;
-    correct.classList.add("grin");
     formulario.appendChild(correct);
     setTimeout(()=>{correct.remove()}, 1000);
 
