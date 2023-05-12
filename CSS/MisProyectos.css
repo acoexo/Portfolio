@@ -135,25 +135,34 @@ body {
 .frontintro h1{
     color:#000;
 }
-.images article{
-    padding: 1rem;
+.imagenes article{
+    margin-left: -1px;
     background-color: var(--blanco);
+    border-left: 1px #000 solid;
+    border-right: 1px #000 solid;
+    height: 100%;
+    width: 100%;
 }
 
-.images{
+.imagenes{
     margin: 7%;
-    border: 3px solid #000;
+    border:1px #000 solid;
     border-radius: .5rem;
-    display:flex;
-    flex-direction: column;
-    background-color: #000;
+    background-color: #ffffff;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.imagenes img{
+    margin: 3%;
+    max-width: 350px;
+    max-height: 200px;
 }
   
-.images p {
+.imagenes p {
     margin: .5rem 0;
   }
   
-.images h2 {
+.imagenes h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
   }

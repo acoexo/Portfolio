@@ -1,27 +1,36 @@
-function getTittle(obj) {
-    const header = document.querySelector('.frontintro'); 
+const header = document.querySelector('.frontintro'); 
+const section = document.querySelector('.imagenes');
+const requestURL = '../JSON/json.json';
+const request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'text';
+request.send();
+
+
+
+
+function getTitle(obj) {
     const myH1 = document.createElement('h1');
-    myH1.textContent = obj.title;
+    myH1.textContent = 
     header.appendChild(myH1);
 
     const myPara = document.createElement('p');
-    myPara.textContent = `${obj.user}`;
+    myPara.textContent = obj['user'];
     header.appendChild(myPara);
 }
 
 function getChilds(obj) {
-    const section = document.querySelector('.images');
     const proyects = obj.proyects;
 
-    for (const proyects of proyects) {
+    for (let proyects1 of proyects) {
       const myArticle = document.createElement('article');
       const myH2 = document.createElement('h2');
       const myImg = document.createElement("img");
       const myPara1 = document.createElement('p');
 
-      myH2.textContent = proyects.name;
-      myPara1.textContent = `Proyect name: ${proyects.name}`;
-      myImg.src = proyects.img;
+      myH2.textContent = proyects1.name;
+      myPara1.textContent = `Proyect name: ${proyects1.name}`;
+      myImg.src = proyects1.img;
 
       myArticle.appendChild(myH2);
       myArticle.appendChild(myPara1);
@@ -31,11 +40,7 @@ function getChilds(obj) {
       section.appendChild(myArticle);
     }
   }
-  const requestURL = './../json.json';
-  const request = new XMLHttpRequest();
-  request.open('GET', requestURL);
-  request.responseType = 'text';
-  request.send();
+
   
   request.onload = function() {
     const myProyectsText = request.response;
