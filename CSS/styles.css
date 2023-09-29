@@ -180,6 +180,7 @@ svg{
     .rd{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap:1rem;
         margin:0 auto;
         justify-items: center;
@@ -191,6 +192,15 @@ svg{
     .rd--about{
         width: 50%;
         max-width: 70rem;
+    }
+    .rd--about{
+        grid-area: 1 / 1 / 2 / 2;  
+    }
+    .rd--proyects{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .rd--studies{
+        grid-area: 1 / 3 / 2 / 4;
     }
     .boton1,
     .boton1:hover,
@@ -206,7 +216,9 @@ svg{
         background-color: var(--primario);
         width: 100%;
     }
-    
+    .boton2{
+        grid-area: 2 / 2 / 3 / 3;
+    }
     
     form{
         margin: 0 auto;

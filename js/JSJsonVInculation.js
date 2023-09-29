@@ -11,7 +11,7 @@ request.send();
 
 function getTitle(obj) {
     const myH1 = document.createElement('h1');
-    myH1.textContent = 
+    myH1.textContent = obj.title
     header.appendChild(myH1);
 
     const myPara = document.createElement('p');
