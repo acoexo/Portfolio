@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
     background: #161a23;
 }
+
 .main{
     position: relative;
     display: flex;
@@ -30,8 +31,8 @@ body{
 }
 .main .navigation span{
     position:absolute;
-    width: 7px;
-    height: 7px;
+    width: 0rem;
+    height: 0rem;
     background:#fff;
     transform: translate(calc(14px * var(--x)),calc(14px*var(--y)));
     transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
@@ -41,10 +42,10 @@ body{
     align-items: center;
 }
 .main .navigation.active span{
-    width: 45px;
-    height: 45px;
+    width: 7rem;
+    height: 7rem;
     background: #1f2536;
-    transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+    transform: translate(calc(150px * var(--x)), calc(150px * var(--y)));
 }
 .main .navigation span ion-icon{
     transition: .5s;
@@ -53,25 +54,26 @@ body{
 .main .navigation.active span ion-icon{
     font-size: 1.35em;
     color:#fff;
+
 }
 .main .navigation.active span:hover ion-icon{
     color:#2dfc53;
     filter: drop-shadow(0 0 2px #49b85d) drop-shadow(0 0 3px #49b85d) drop-shadow(0 0 12px #49b85d);
 }
-.closer{
+.closer {
     position: absolute;
-    cursor:pointer;
-    width: 7px;
-    height: 7px;
-    background: #fff;
+    cursor: pointer;
+    width: 7rem;
+    height: 7rem;
+    color:#fff;
+    background: #1f2536;
     transition: .5s;
     transition-delay: .4s;
-    pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main .navigation.active .closer{
+.main .navigation.active .closer {
     width: 40px;
     height: 40px;
     pointer-events: initial;
@@ -83,6 +85,8 @@ body{
     scale:0;
     color: #10131c;
     transition: .5s;
+    width: 3rem;
+    height: 3rem;
 }
 .main .navigation.active .closer ion-icon{
     scale:1;

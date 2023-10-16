@@ -8,37 +8,39 @@
     <link rel="stylesheet" href="./CSS/links.css">
 </head>
 <body>
-    <div class="main">
-        <div class="navigation active"> 
-            
-            <span style="--1:0;--x:-1;--y:0;"> 
-                <ion-icon name="logo-facebook"></ion-icon>
+    
+    <div class="main">        
+        
+
+        <div class="navigation"> 
+            <span style="--1:0;--x:-1;--y:0;" onclick="handleMenuItemClick('Facebook')"> 
+                <ion-icon name="logo-facebook" style="width: 3rem; height: 3rem;"></ion-icon>
             </span> 
-            <span style="--1:1;--x:1;--y:0;">
-                <ion-icon name="logo-instagram"></ion-icon>
+            <span style="--1:1;--x:1;--y:0;" onclick="handleMenuItemClick('Instagram')">
+                <ion-icon name="logo-instagram" style="width: 3rem; height: 3rem;"></ion-icon>
             </span>
-            <span style="--1:2;--x:0;--y:-1;">
-                <ion-icon name="logo-twitter"></ion-icon> 
+            <span style="--1:2;--x:0;--y:-1;" onclick="handleMenuItemClick('Twitter')">
+                <ion-icon name="logo-twitter" style="width: 3rem; height: 3rem;"></ion-icon> 
             </span> 
-            <span style="--1:3;--x:0;--y:1;">
-                <ion-icon name="logo-twitch"></ion-icon> 
+            <span style="--1:3;--x:0;--y:1;" onclick="handleMenuItemClick('Twitch')">
+                <ion-icon name="logo-twitch" style="width: 3rem; height: 3rem;"></ion-icon> 
             </span> 
-            <span style="--1:4;--x:-1;--y:1;">
-                <ion-icon name="logo-youtube"></ion-icon> 
+            <span style="--1:4;--x:-1;--y:1;" onclick="handleMenuItemClick('Youtube')">
+                <ion-icon name="logo-youtube"  style="width: 3rem; height: 3rem;"></ion-icon> 
             </span> 
-            <span style="--1:5;--x:-1;--y:-1;">
-                <ion-icon name="logo-discord"></ion-icon>
+            <span style="--1:5;--x:-1;--y:-1;" onclick="handleMenuItemClick('Discord')">
+                <ion-icon name="logo-discord"  style="width: 3rem; height: 3rem;"></ion-icon>
             </span>
-            <span style="--1:6;--x:1;--y:-1;"> 
-                <ion-icon name="logo-github"></ion-icon>
+            <span style="--1:6;--x:1;--y:-1;" onclick="handleMenuItemClick('Github')"> 
+                <ion-icon name="logo-github" style="width: 3rem; height: 3rem;"></ion-icon>
             </span>
-            <span style="--1:7;--x:1;--y:1;">
-                <ion-icon name="logo-codepen"></ion-icon>
+            <span style="--1:7;--x:1;--y:1;" onclick="handleMenuItemClick('Codepen')">
+                <ion-icon name="logo-codepen"  style="width: 3rem; height: 3rem;"></ion-icon>
             </span>
         </div>
-        <div class="closer"><ion-icon name="close-outline"></ion-icon></div>
+        <div class="closer" onclick="toggleMenu()" ><ion-icon name="close-outline"  style="width: 3rem; height: 3rem;"></ion-icon></div>
+
     </div>
-    
     <script type="module" 
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
     </script> 
@@ -47,14 +49,20 @@
     </script>
     
     <script>
-        let navigation = document.querySelector('.navigation');
-        let closer = document.querySelector('.closer'); 
-        navigation.onclick=function(){
-           navigation.classList.add('active');
-        }
-        closer.onclick= function(){ 
-            navigation.classList.remove('active')
-        }
+        var navigation = document.querySelectorAll(".navigation");
+
+function handleMenuItemClick(item) {
+    // Aquí puedes agregar el código específico para cada elemento del menú
+    console.log('Clic en ' + item);
+}
+
+function toggleMenu() {
+    // Itera sobre cada elemento en la NodeList y aplica toggle a cada uno
+    navigation.forEach(function(navItem) {
+        navItem.classList.toggle("active");
+    });
+    console.log("Clic en closer")
+}
     </script>
 </body>
-</html> 
+</html>
